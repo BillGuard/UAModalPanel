@@ -315,7 +315,7 @@
 						options:UIViewAnimationCurveEaseOut
 					 animations:^{
 						 self.alpha = 1.0;
-						 self.contentContainer.center = self.center;
+						 //self.contentContainer.center = self.center;
 						 self.contentContainer.transform = CGAffineTransformMakeScale((shouldBounce ? 1.05 : 1.0), (shouldBounce ? 1.05 : 1.0));
 					 }
 					 completion:(shouldBounce ? animationBlock : ^(BOOL finished) {
