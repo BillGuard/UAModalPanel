@@ -174,8 +174,8 @@
 
 - (CGRect)roundedRectFrame {
 
-	return CGRectMake(self.margin.left + self.frame.origin.x,
-					  self.margin.top + self.frame.origin.y,
+	return CGRectMake(self.margin.left /*+ self.frame.origin.x*/,
+					  self.margin.top/* + self.frame.origin.y*/,
 					  self.frame.size.width - self.margin.left - self.margin.right,
 					  self.frame.size.height - self.margin.top - self.margin.bottom);
 }
